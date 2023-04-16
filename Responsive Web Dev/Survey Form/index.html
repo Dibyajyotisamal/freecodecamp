@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Account Creation Form</title>
+</head>
+
+<body>
+    <h1 id="title">
+        REGISTRATION FORM
+    </h1>
+    <p id="description">
+        Join the community and start contributing..
+    </p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label" for="name">Enter your Name:<input type="text" placeholder="Enter your name"required id="name"></label>
+            <label id="email-label" for="email">Enter your Email:<input type="email"placeholder="Enter your email"id="email"required></label>
+            <label id="number-label" for="number">Enter your Age:<input type="number" min="13"max="100"placeholder="Enter your age"id="number"></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Which country are you from?</label>
+            <select name="country" id="dropdown">
+          <option value="">--Please select an option--</option>
+        <option value="India">India</option>
+        <option value="Chile">Chile</option>
+        <option value="Argentina">Argentina</option>
+        <option value="China">China</option>
+        <option value="russia">Russia</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="others">Others</options>
+
+      </select></label>
+        </fieldset>
+        <fieldset id="gender">
+            <legend>What's your gender?</legend>
+            <label for="gender"><input name="gender" class="inline"value="M" type="radio">Male</label>
+            <label for="gender"><input class="inline"name="gender" value="F"type="radio">Female</label>
+            <label for="gender"><input class="inline"name="gender" value="O" type="radio">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>What technologies are you interested in?</legend>
+            <label for="interests"><input type="checkbox" id="interests" class="inline"value="Blockchain">Blockchain</label>
+            <label for="interests"><input type="checkbox" class="inline"id="interests" value="Web Development">Web Development</label>
+            <label for="interests"><input type="checkbox" id="interests" class="inline"value="App Development">App Development</label>
+        </fieldset>
+        <fieldset>
+            <label for='comments'>Additional Info:<textarea id="comments" cols="60" rows="4" placeholder="More about yourself..."></textarea>
+    </fieldset>
+    <label for="submit"><input type="submit" id="submit">
+        </label>
+    </form>
+    <footer>
+        Powered by <a href="https://www.rebirthyog.com" target="_blank">DWebCompany</a>
+    </footer>
+</body>
+
+</html>
